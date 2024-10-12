@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:whisper/responsive/responsive_layout.dart';
+import 'package:whisper/screens/mobile_screen_layout.dart';
+import 'package:whisper/screens/web_screen_layout.dart';
+import 'package:whisper/utils/colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,16 +15,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      debugShowCheckedModeBanner: false,
+      title: 'Whatsup UI',
+      theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: backgroundColor,
+          appBarTheme: const AppBarTheme(color: appBarColor)),
       home: const Scaffold(
-        body: Center(
-          child: Text("Starting a new Project"),
-        ),
-      ),
+          body: ResponsiveLayout(
+        mobileScreenLayout: MobileScreenLayout(),
+        webScreenLayout: WebScreenLayout(),
+      )),
     );
   }
 }
