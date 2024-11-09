@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whisper/info.dart';
-import 'package:whisper/utils/colors.dart';
+import 'package:whisper/colors.dart';
 
 class ContactsList extends StatefulWidget {
   const ContactsList({super.key});

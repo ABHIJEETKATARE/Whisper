@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:whisper/responsive/responsive_layout.dart';
+import 'package:whisper/colors.dart';
+import 'package:whisper/utils/responsive_layout.dart';
 import 'package:whisper/screens/mobile_screen_layout.dart';
 import 'package:whisper/screens/web_screen_layout.dart';
-import 'package:whisper/utils/colors.dart';
 
 void main() {
   runApp(const MyApp());
