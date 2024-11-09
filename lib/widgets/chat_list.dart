@@ -17,10 +17,10 @@ class ChatList extends StatelessWidget {
             date: messages[index]['time'].toString(),
           );
         }
-        // return SenderMessageCard(
-        //   message: messages[index]['text'].toString(),
-        //   date: messages[index]['time'].toString(),
-        // );
+        return SenderMessageCard(
+          message: messages[index]['text'].toString(),
+          date: messages[index]['time'].toString(),
+        );
       },
     );
   }
