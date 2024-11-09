@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whisper/info.dart';
 import 'package:whisper/colors.dart';
+import 'package:whisper/screens/mobile_chat_screen.dart';
 
 class ContactsList extends StatefulWidget {
   const ContactsList({super.key});
@@ -21,7 +22,13 @@ class _ContactsListState extends State<ContactsList> {
           return Column(
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const MobileChatScreen(),
+                    ),
+                  );
+                },
                 child: Padding(
                   padding: EdgeInsets.only(bottom: 10),
                   child: ListTile(
