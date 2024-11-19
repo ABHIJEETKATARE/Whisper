@@ -1,10 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:whisper/colors.dart';
+import 'package:whisper/firebase_options.dart';
 import 'package:whisper/utils/responsive_layout.dart';
 import 'package:whisper/screens/mobile_screen_layout.dart';
 import 'package:whisper/screens/web_screen_layout.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
