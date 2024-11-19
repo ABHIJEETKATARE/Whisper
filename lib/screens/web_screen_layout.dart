@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:whisper/colors.dart';
+import 'package:whisper/utils/colors.dart';
 import 'package:whisper/screens/mobile_screen_layout.dart';
 import 'package:whisper/widgets/chat_list.dart';
 import 'package:whisper/widgets/contacts_list.dart';

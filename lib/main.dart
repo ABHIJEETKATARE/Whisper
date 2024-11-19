@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:whisper/colors.dart';
+import 'package:whisper/utils/colors.dart';
 import 'package:whisper/firebase_options.dart';
 import 'package:whisper/utils/responsive_layout.dart';
 import 'package:whisper/screens/mobile_screen_layout.dart';
