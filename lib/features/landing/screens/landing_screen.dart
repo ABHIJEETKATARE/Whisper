@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:whisper/common/utils/colors.dart';
 import 'package:whisper/common/widgets/custom_button.dart';
+import 'package:whisper/features/auth/screens/login_screen.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({Key? key}) : super(key: key);
+  void navigateToLoginScreen(BuildContext context) {
+    Navigator.pushNamed(context, LoginScreen.routeName);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +47,7 @@ class LandingScreen extends StatelessWidget {
               width: size.width * 0.75,
               child: CustomButton(
                 text: 'AGREE AND CONTINUE',
-                onPressed: () {},
+                onPressed: () => navigateToLoginScreen(context),
               ),
             ),
           ],
