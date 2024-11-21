@@ -6,7 +6,6 @@ import 'package:whisper/common/widgets/custom_button.dart';
 class LoginScreen extends StatefulWidget {
   static const routeName = '/login-screen';
   const LoginScreen({Key? key}) : super(key: key);
-
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }

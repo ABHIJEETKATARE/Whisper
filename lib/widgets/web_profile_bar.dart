@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:whisper/utils/colors.dart';
+import 'package:whisper/common/utils/colors.dart';
 
 class WebProfileBar extends StatelessWidget {
   const WebProfileBar({super.key});

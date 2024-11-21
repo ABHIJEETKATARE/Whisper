@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whisper/info.dart';
-import 'package:whisper/utils/colors.dart';
+import 'package:whisper/common/utils/colors.dart';
 import 'package:whisper/screens/mobile_chat_screen.dart';
 
 class ContactsList extends StatefulWidget {
